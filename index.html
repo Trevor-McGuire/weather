@@ -29,16 +29,17 @@
   <!-- jquery script hosted by google -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
+  <!-- google places api -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIDjXvF9NUyB43bLbgtB83A9zYc5Tl2qI&libraries=places"></script>
 </head>
 
 <body class="container-fluid p-0 m-0 row">
-  <header class="bg-dark col-12">
-    <h1 class="text-white-50 center text-center">Weather Dashboard</h1>
+  <header class="bg-dark col-12 p-0">
+    <h1 class="text-white-50 center text-center m-0 p-3">Weather Dashboard</h1>
   </header>
   <aside class="col-4 d-flex flex-column p-3 ">
     <input id="search-input" type="text" placeholder="Enter a city" class="form-control form-control-lg m-1">
-    <hr class="m-1" />
+    <p class="btn m-0 p-0">History</p>
     <button class="btn btn-secondary m-1">City</button>
     <button class="btn btn-secondary m-1">City</button>
     <button class="btn btn-secondary m-1">City</button>
@@ -52,47 +53,66 @@
   </aside>
   <main class="col-8">
     <section class="col col-12 border my-3 p-3">
-      <h3 class="p-0">City and Date</h3>
-      <p>Temp</p>
-      <p>Wind</p>
-      <p>Humidity</p>
+      <h3 class="p-0"><span class="city"></span> <span class="date"></span></h3>
+      <p class="p-0 mb-1 display-4 code"></p>
+      <p class="p-0 m-0 font-weight-bold">Temp:</p>
+      <p class="p-0 mb-1 temp"></span>
+      <p class="p-0 m-0 font-weight-bold">Wind:</p>
+      <p class="p-0 mb-1 wind"></p>
+      <p class="p-0 m-0 font-weight-bold">Humidity:</p>
+      <p class="p-0 mb-1 humidity"></p>
     </section>
     <section class="row col-12 my-3 p-3">
       <h4 class="col-12 px-3">5-Day Forecast:</h4>
-      <article class="border col m-1">
-        <h5>Date</h5>
-        <p>🌤</p>
-        <p>Temp</p>
-        <p>Wind</p>
-        <p>Humidity</p>
+      <article class="border col m-1 p-1">
+        <h5 class="date mb-1"></h5>
+        <p class="p-0 mb-1 display-4 code"></p>
+        <p class="p-0 m-0 font-weight-bold">Temp:</p>
+        <p class="p-0 mb-1 temp"></span>
+        <p class="p-0 m-0 font-weight-bold">Wind:</p>
+        <p class="p-0 mb-1 wind"></p>
+        <p class="p-0 m-0 font-weight-bold">Humidity:</p>
+        <p class="p-0 mb-1 humidity"></p>
       </article>
-      <article class="border col m-1">
-        <h5>Date</h5>
-        <p>🌤</p>
-        <p>Temp</p>
-        <p>Wind</p>
-        <p>Humidity</p>
+      <article class="border col m-1 p-1">
+        <h5 class="date mb-1"></h5>
+        <p class="p-0 mb-1 display-4 code"></p>
+        <p class="p-0 m-0 font-weight-bold">Temp:</p>
+        <p class="p-0 mb-1 temp"></span>
+        <p class="p-0 m-0 font-weight-bold">Wind:</p>
+        <p class="p-0 mb-1 wind"></p>
+        <p class="p-0 m-0 font-weight-bold">Humidity:</p>
+        <p class="p-0 mb-1 humidity"></p>
       </article>
-      <article class="border col m-1">
-        <h5>Date</h5>
-        <p>🌤</p>
-        <p>Temp</p>
-        <p>Wind</p>
-        <p>Humidity</p>
+      <article class="border col m-1 p-1">
+        <h5 class="date mb-1"></h5>
+        <p class="p-0 mb-1 display-4 code"></p>
+        <p class="p-0 m-0 font-weight-bold">Temp:</p>
+        <p class="p-0 mb-1 temp"></span>
+        <p class="p-0 m-0 font-weight-bold">Wind:</p>
+        <p class="p-0 mb-1 wind"></p>
+        <p class="p-0 m-0 font-weight-bold">Humidity:</p>
+        <p class="p-0 mb-1 humidity"></p>
       </article>
-      <article class="border col m-1">
-        <h5>Date</h5>
-        <p>🌤</p>
-        <p>Temp</p>
-        <p>Wind</p>
-        <p>Humidity</p>
+      <article class="border col m-1 p-1">
+        <h5 class="date mb-1"></h5>
+        <p class="p-0 mb-1 display-4 code"></p>
+        <p class="p-0 m-0 font-weight-bold">Temp:</p>
+        <p class="p-0 mb-1 temp"></span>
+        <p class="p-0 m-0 font-weight-bold">Wind:</p>
+        <p class="p-0 mb-1 wind"></p>
+        <p class="p-0 m-0 font-weight-bold">Humidity:</p>
+        <p class="p-0 mb-1 humidity"></p>
       </article>
-      <article class="border col m-1">
-        <h5>Date</h5>
-        <p>🌤</p>
-        <p>Temp</p>
-        <p>Wind</p>
-        <p>Humidity</p>
+      <article class="border col m-1 p-1">
+        <h5 class="date mb-1"></h5>
+        <p class="p-0 mb-1 display-4 code"></p>
+        <p class="p-0 m-0 font-weight-bold">Temp:</p>
+        <p class="p-0 mb-1 temp"></span>
+        <p class="p-0 m-0 font-weight-bold">Wind:</p>
+        <p class="p-0 mb-1 wind"></p>
+        <p class="p-0 m-0 font-weight-bold">Humidity:</p>
+        <p class="p-0 mb-1 humidity"></p>
       </article>
     </section>
   </main>
